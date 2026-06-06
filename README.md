@@ -4,9 +4,26 @@ Reusable AI-agent skills shaped by everyday AI use across chat and coding workfl
 
 This repo starts small on purpose. Each skill should be practical, portable, and easy to copy into another AI account or install as a skill folder.
 
+## Structure
+
+Skills are grouped by lifecycle first:
+
+- `launch/` for skills ready to use regularly
+- `develop/` for skills still being shaped
+- `deprecated/` for skills kept for reference only
+
+Each lifecycle has the same categories:
+
+- `daily/`
+- `SE/`
+- `coding/`
+- `other/`
+
 ## Available Skills
 
 ### skeptical-research
+
+Path: `develop/daily/skeptical-research`
 
 Use this skill for skeptical, evidence-driven research and decisions about tools, products, AI models, APIs, subscriptions, pricing, quotas, limits, privacy, TOS, licenses, commercial use, and production readiness.
 
@@ -24,7 +41,7 @@ Install the full skill folder so Codex can discover its metadata and instruction
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -R skeptical-research ~/.codex/skills/
+cp -R develop/daily/skeptical-research ~/.codex/skills/
 ```
 
 Then ask Codex normally, or explicitly invoke the skill:
@@ -38,7 +55,7 @@ Use $skeptical-research to compare these two AI plans for my workflow.
 For chat-only use, copy the contents of:
 
 ```text
-skeptical-research/SKILL.md
+develop/daily/skeptical-research/SKILL.md
 ```
 
 Paste it into a custom instruction, project instruction, custom GPT instruction, or the top of a new chat. The v1 skill is intentionally self-contained, so no extra reference files are required.
@@ -65,4 +82,3 @@ Before adding a new skill or expanding an existing one:
 - Prefer one self-contained `SKILL.md` for v1.
 - Add references only when they reduce repeated context or make the skill easier to maintain.
 - Keep examples practical and decision-oriented.
-
