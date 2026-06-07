@@ -35,18 +35,18 @@ Best for questions like:
 - "Is this tool production-ready?"
 - "Compare these two software stacks for my use case."
 
-### github-https-repo-auth
+## Develop Skills
 
-Path: `develop/SE/github-https-repo-auth`
+Still being shaped:
 
-Use this skill for repo-scoped GitHub HTTPS authentication, especially when publishing from a separate GitHub account without logging out existing accounts or switching to SSH.
+- `develop/SE/github-https-repo-auth` - repo-scoped GitHub HTTPS auth and push troubleshooting
+- `develop/SE/codex-sandbox-git` - Codex sandbox git workflow and escalation cautions
 
-Best for questions like:
+### Security warning
 
-- "Push this repo over HTTPS with a different GitHub account."
-- "Fix `could not read Password` for this repo only."
-- "Fix GitHub push 403 without touching global auth."
-- "Store a PAT safely in the credential helper for one repo."
+- `develop/SE/codex-sandbox-git`: may guide approved commands outside normal sandbox boundaries for `.git` metadata writes, credential helpers, tool caches, or network git operations. Review those steps carefully and prefer the smallest command scope that completes the task.
+
+Develop skills not listed here do not currently have a known sandbox-boundary warning.
 
 ## Use With Codex
 
@@ -89,6 +89,8 @@ The `skeptical-research` skill may later grow optional reference files for answe
 ## Contributing
 
 Contributions should come from real repeated use, not speculative prompt design.
+
+Feedback from using these skills is welcome and helps improve them. New unrelated skills may be considered case by case, especially when the maintainer has not personally tested or used that workflow enough to judge it well.
 
 Before adding a new skill or expanding an existing one:
 
