@@ -35,6 +35,19 @@ Best for questions like:
 - "Is this tool production-ready?"
 - "Compare these two software stacks for my use case."
 
+### github-https-repo-auth
+
+Path: `develop/SE/github-https-repo-auth`
+
+Use this skill for repo-scoped GitHub HTTPS authentication, especially when publishing from a separate GitHub account without logging out existing accounts or switching to SSH.
+
+Best for questions like:
+
+- "Push this repo over HTTPS with a different GitHub account."
+- "Fix `could not read Password` for this repo only."
+- "Fix GitHub push 403 without touching global auth."
+- "Store a PAT safely in the credential helper for one repo."
+
 ## Use With Codex
 
 Install the full skill folder so Codex can discover its metadata and instructions:
