@@ -23,7 +23,7 @@ Each lifecycle has the same categories:
 
 ### skeptical-research
 
-Path: `develop/daily/skeptical-research`
+Path: `launch/daily/skeptical-research`
 
 Use this skill for skeptical, evidence-driven research and decisions about tools, products, AI models, APIs, subscriptions, pricing, quotas, limits, privacy, TOS, licenses, commercial use, and production readiness.
 
@@ -54,7 +54,7 @@ Install the full skill folder so Codex can discover its metadata and instruction
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -R develop/daily/skeptical-research ~/.codex/skills/
+cp -R launch/daily/skeptical-research ~/.codex/skills/
 ```
 
 Then ask Codex normally, or explicitly invoke the skill:
@@ -68,7 +68,7 @@ Use $skeptical-research to compare these two AI plans for my workflow.
 For chat-only use, copy the contents of:
 
 ```text
-develop/daily/skeptical-research/SKILL.md
+launch/daily/skeptical-research/SKILL.md
 ```
 
 Paste it into a custom instruction, project instruction, custom GPT instruction, or the top of a new chat. The v1 skill is intentionally self-contained, so no extra reference files are required.
