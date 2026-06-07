@@ -46,8 +46,8 @@ When unsure, prefer a new branch unless the new work clearly belongs in the same
 Use the default branch as the base for independent work:
 
 ```bash
-git fetch origin main
-git switch -c codex/short-feature-name origin/main
+git fetch origin DEFAULT_BRANCH
+git switch -c codex/short-feature-name origin/DEFAULT_BRANCH
 ```
 
 Use the current branch as the base only when the new work depends on current unmerged commits:
