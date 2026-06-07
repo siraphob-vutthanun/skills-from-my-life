@@ -37,19 +37,10 @@ Best for questions like:
 
 ## Develop Skills
 
-These skills are still being shaped. They may be useful, but their behavior and wording are less settled than launch skills.
+Still being shaped:
 
-### github-https-repo-auth
-
-Path: `develop/SE/github-https-repo-auth`
-
-Repo-scoped GitHub HTTPS authentication for cases like publishing from a separate GitHub account, repairing credential helper issues, and diagnosing push errors without changing unrelated global auth.
-
-### codex-sandbox-git
-
-Path: `develop/SE/codex-sandbox-git`
-
-Git workflow guidance for Codex workspace sandboxes, including when to use normal sandbox commands and when a `.git` write, network remote, or credential operation may need explicit user-approved escalation.
+- `develop/SE/github-https-repo-auth` - repo-scoped GitHub HTTPS auth and push troubleshooting
+- `develop/SE/codex-sandbox-git` - Codex sandbox git workflow and escalation cautions
 
 ## Use With Codex
 
