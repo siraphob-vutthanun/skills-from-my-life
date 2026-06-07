@@ -48,8 +48,7 @@ For macOS Keychain or any configured Git credential helper, scope the credential
 
 ```bash
 git config --local credential.useHttpPath true
-git config --local credential.https://github.com.username OWNER_OR_USERNAME
-```
+git config --local credential.https://github.com.username USERNAME
 
 Reject a bad saved credential before approving a replacement:
 
