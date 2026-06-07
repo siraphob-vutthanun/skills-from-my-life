@@ -48,6 +48,19 @@ Best for questions like:
 - "Fix GitHub push 403 without touching global auth."
 - "Store a PAT safely in the credential helper for one repo."
 
+### codex-sandbox-git
+
+Path: `develop/SE/codex-sandbox-git`
+
+Use this skill for git operations inside Codex workspace sandboxes, especially when `.git` writes, local git config, network remotes, credential helpers, or push/pull commands need careful escalation.
+
+Best for questions like:
+
+- "Commit and push this Codex workspace change."
+- "Why does `git mv` fail with `index.lock` in Codex?"
+- "Avoid retrying sandbox-blocked git commands."
+- "Handle `Could not resolve host` during `git push` from Codex."
+
 ## Use With Codex
 
 Install the full skill folder so Codex can discover its metadata and instructions:
