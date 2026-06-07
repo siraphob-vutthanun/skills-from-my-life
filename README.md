@@ -23,7 +23,7 @@ Each lifecycle has the same categories:
 
 ### skeptical-research
 
-Path: `develop/daily/skeptical-research`
+Path: `launch/daily/skeptical-research`
 
 Use this skill for skeptical, evidence-driven research and decisions about tools, products, AI models, APIs, subscriptions, pricing, quotas, limits, privacy, TOS, licenses, commercial use, and production readiness.
 
@@ -35,13 +35,27 @@ Best for questions like:
 - "Is this tool production-ready?"
 - "Compare these two software stacks for my use case."
 
+### github-https-repo-auth
+
+Path: `develop/SE/github-https-repo-auth`
+
+Use this skill for repo-scoped GitHub HTTPS authentication, especially when publishing from a separate GitHub account without logging out existing accounts or switching to SSH.
+
+Best for questions like:
+
+- "Push this repo over HTTPS with a different GitHub account."
+- "Fix `could not read Password` for this repo only."
+- "Fix GitHub push 403 without touching global auth."
+- "Store a PAT safely in the credential helper for one repo."
+
 ## Use With Codex
 
 Install the full skill folder so Codex can discover its metadata and instructions:
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -R develop/daily/skeptical-research ~/.codex/skills/
+cp -R launch/daily/skeptical-research ~/.codex/skills/
+cp -R develop/SE/github-https-repo-auth ~/.codex/skills/
 ```
 
 Then ask Codex normally, or explicitly invoke the skill:
@@ -55,7 +69,7 @@ Use $skeptical-research to compare these two AI plans for my workflow.
 For chat-only use, copy the contents of:
 
 ```text
-develop/daily/skeptical-research/SKILL.md
+launch/daily/skeptical-research/SKILL.md
 ```
 
 Paste it into a custom instruction, project instruction, custom GPT instruction, or the top of a new chat. The v1 skill is intentionally self-contained, so no extra reference files are required.
