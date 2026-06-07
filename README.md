@@ -55,6 +55,7 @@ Install the full skill folder so Codex can discover its metadata and instruction
 ```bash
 mkdir -p ~/.codex/skills
 cp -R launch/daily/skeptical-research ~/.codex/skills/
+cp -R develop/SE/github-https-repo-auth ~/.codex/skills/
 ```
 
 Then ask Codex normally, or explicitly invoke the skill:
