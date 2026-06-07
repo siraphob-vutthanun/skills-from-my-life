@@ -44,7 +44,9 @@ Still being shaped:
 
 ### Security warning
 
-Some develop skills may involve actions outside normal sandbox boundaries, such as approved network access, credential helpers, or `.git` metadata writes. Review those steps carefully before using them, and prefer the smallest command scope that completes the task.
+- `develop/SE/codex-sandbox-git`: may guide approved commands outside normal sandbox boundaries for `.git` metadata writes, credential helpers, tool caches, or network git operations. Review those steps carefully and prefer the smallest command scope that completes the task.
+
+Develop skills not listed here do not currently have a known sandbox-boundary warning.
 
 ## Use With Codex
 
