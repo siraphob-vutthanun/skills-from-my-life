@@ -42,6 +42,10 @@ Still being shaped:
 - `develop/SE/github-https-repo-auth` - repo-scoped GitHub HTTPS auth and push troubleshooting
 - `develop/SE/codex-sandbox-git` - Codex sandbox git workflow and escalation cautions
 
+### Security warning
+
+Some develop skills may involve actions outside normal sandbox boundaries, such as approved network access, credential helpers, or `.git` metadata writes. Review those steps carefully before using them, and prefer the smallest command scope that completes the task.
+
 ## Use With Codex
 
 Install the full skill folder so Codex can discover its metadata and instructions:
@@ -83,6 +87,8 @@ The `skeptical-research` skill may later grow optional reference files for answe
 ## Contributing
 
 Contributions should come from real repeated use, not speculative prompt design.
+
+Feedback from using these skills is welcome and helps improve them. New unrelated skills may be considered case by case, especially when the maintainer has not personally tested or used that workflow enough to judge it well.
 
 Before adding a new skill or expanding an existing one:
 
