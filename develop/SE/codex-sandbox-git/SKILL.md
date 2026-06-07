@@ -141,7 +141,7 @@ git status --short --branch
 git rev-list --left-right --count @{u}...HEAD
 ```
 
-If the branch has no upstream, use the explicit remote branch after confirming the names:
+If `@{u}` fails because the branch has no upstream, use the explicit remote branch after confirming the names:
 
 ```bash
 git branch --show-current
