@@ -134,13 +134,43 @@ If `git config --local` fails with `.git/config` lock permission errors, rerun i
 
 Network git commands often fail in the sandbox with DNS or host resolution errors.
 
-If a required command fails with `Could not resolve host`, rerun the same command with escalation:
+Before pushing, inspect branch divergence:
+
+```bash
+git status --short --branch
+git rev-list --left-right --count @{u}...HEAD
+```
+
+If the branch has no upstream, use the explicit remote branch after confirming the names:
+
+```bash
+git branch --show-current
+git rev-list --left-right --count origin/BRANCH...HEAD
+```
+
+Interpret the counts as `remote_only local_only`:
+
+- `0 N`: local branch is ahead only; normal push should work.
+- `N 0`: local branch is behind only; fetch/rebase or pull before pushing.
+- `N M`: histories diverged; do not push until you understand why.
+
+If a required network command fails with `Could not resolve host`, rerun the same command with escalation:
 
 ```bash
 git push origin BRANCH
 git fetch origin
 git ls-remote --heads origin
 ```
+
+If the branch was rebased after it had already been pushed, a normal push may be rejected. `--force-with-lease` can rewrite remote branch history, so use it only after verifying the remote branch is the one you intend to rewrite and the user understands that effect:
+
+```bash
+git fetch origin BRANCH
+git rev-list --left-right --count origin/BRANCH...HEAD
+git push --force-with-lease origin BRANCH
+```
+
+Do not use plain `--force`.
 
 After pushing, verify:
 
@@ -171,12 +201,20 @@ Good escalation targets:
 - `git mv ...`
 - `git config --local ...`
 - `git push origin BRANCH`
+- `git push --force-with-lease origin BRANCH`
 - `git ls-remote --heads origin`
 - validators that need tool caches outside the workspace
 
 Use a narrow `prefix_rule` when requesting approval. Avoid broad rules for arbitrary interpreters or destructive commands.
 
-Never escalate destructive commands such as `rm`, `git reset --hard`, or `git checkout -- PATH` unless the user explicitly requested that exact destructive action and the risk is clear.
+Before escalating a command, name what it can affect:
+
+- `.git` metadata writes can change branch, index, config, or commit state.
+- Network git commands can transmit refs, commits, branch names, and account identity to the remote.
+- Credential helper commands can read or write authentication material.
+- Tool-cache commands can write outside the workspace.
+
+Never escalate destructive commands such as `rm`, `git reset --hard`, `git checkout -- PATH`, or plain `git push --force` unless the user explicitly requested that exact destructive action and the risk is clear. Prefer `--force-with-lease` over `--force` for rewritten git history.
 
 ## Practical Loop
 

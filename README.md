@@ -41,6 +41,7 @@ Still being shaped:
 
 - `develop/SE/github-https-repo-auth` - repo-scoped GitHub HTTPS auth and push troubleshooting
 - `develop/SE/codex-sandbox-git` - Codex sandbox git workflow and escalation cautions
+- `develop/SE/git-feature-branch-hygiene` - keep unrelated git work on separate branches
 
 ### Security warning
 
