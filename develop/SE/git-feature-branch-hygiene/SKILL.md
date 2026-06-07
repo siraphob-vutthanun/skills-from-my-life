@@ -87,8 +87,8 @@ If unrelated work slipped in, split it before committing when practical.
 Verify the commit story:
 
 ```bash
-git log --oneline --decorate origin/main..HEAD
-git diff --stat origin/main...HEAD
+git log --oneline --decorate origin/DEFAULT_BRANCH..HEAD
+git diff --stat origin/DEFAULT_BRANCH...HEAD
 ```
 
 If the branch includes unrelated commits from another feature, rebase or recreate the branch before pushing.
