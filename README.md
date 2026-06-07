@@ -35,31 +35,21 @@ Best for questions like:
 - "Is this tool production-ready?"
 - "Compare these two software stacks for my use case."
 
+## Develop Skills
+
+These skills are still being shaped. They may be useful, but their behavior and wording are less settled than launch skills.
+
 ### github-https-repo-auth
 
 Path: `develop/SE/github-https-repo-auth`
 
-Use this skill for repo-scoped GitHub HTTPS authentication, especially when publishing from a separate GitHub account without logging out existing accounts or switching to SSH.
-
-Best for questions like:
-
-- "Push this repo over HTTPS with a different GitHub account."
-- "Fix `could not read Password` for this repo only."
-- "Fix GitHub push 403 without touching global auth."
-- "Store a PAT safely in the credential helper for one repo."
+Repo-scoped GitHub HTTPS authentication for cases like publishing from a separate GitHub account, repairing credential helper issues, and diagnosing push errors without changing unrelated global auth.
 
 ### codex-sandbox-git
 
 Path: `develop/SE/codex-sandbox-git`
 
-Use this skill for git operations inside Codex workspace sandboxes, especially when `.git` writes, local git config, network remotes, credential helpers, or push/pull commands need careful escalation.
-
-Best for questions like:
-
-- "Commit and push this Codex workspace change."
-- "Why does `git mv` fail with `index.lock` in Codex?"
-- "Avoid retrying sandbox-blocked git commands."
-- "Handle `Could not resolve host` during `git push` from Codex."
+Git workflow guidance for Codex workspace sandboxes, including when to use normal sandbox commands and when a `.git` write, network remote, or credential operation may need explicit user-approved escalation.
 
 ## Use With Codex
 

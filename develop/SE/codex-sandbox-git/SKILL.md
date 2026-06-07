@@ -9,6 +9,19 @@ Use this skill when doing git work from inside a Codex workspace sandbox.
 
 The goal is to avoid wasting turns on predictable sandbox failures. Inspect first, use repo-local changes, escalate only when the operation needs it, and do not retry the same blocked command without changing the execution mode.
 
+## Warning
+
+Be careful with this skill. Escalation can run a command outside the sandbox boundaries that the user or environment intentionally set.
+
+Do not treat escalation as the default way to use git. Use it only when the exact git operation is required, the sandbox failure is understood, and the user-facing approval request clearly names what boundary is being crossed.
+
+Prefer the least powerful path that completes the task:
+
+- Use read-only sandbox commands for inspection.
+- Use normal workspace edits for file changes.
+- Escalate only the specific `.git`, credential-helper, cache, or network command that cannot work inside the sandbox.
+- Do not bundle unrelated work into an escalated command.
+
 ## Core Model
 
 Separate git work into three classes:
@@ -179,4 +192,3 @@ Use this loop for most git tasks:
 8. Verify final status and report exact commit or push result.
 
 If a command fails, classify the error before trying another command. Change execution mode when the failure is sandbox-related.
-
