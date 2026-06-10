@@ -35,6 +35,15 @@ Best for questions like:
 - "Is this tool production-ready?"
 - "Compare these two software stacks for my use case."
 
+## All Skills
+
+| Skill | Status | Path |
+|-------|--------|------|
+| skeptical-research | launch | `launch/daily/skeptical-research` |
+| github-https-repo-auth | develop | `develop/SE/github-https-repo-auth` |
+| codex-sandbox-git | develop | `develop/SE/codex-sandbox-git` |
+| git-feature-branch-hygiene | develop | `develop/SE/git-feature-branch-hygiene` |
+
 ## Develop Skills
 
 Still being shaped:
@@ -49,31 +58,44 @@ Still being shaped:
 
 Develop skills not listed here do not currently have a known sandbox-boundary warning.
 
-## Use With Codex
+## Installation
 
-Install the full skill folder so Codex can discover its metadata and instructions:
+### Option 1: npx skills (Recommended)
+
+Install all skills at once from the GitHub repo:
 
 ```bash
+npx skills add https://github.com/siraphob-vutthanun/skills-from-my-life
+```
+
+Works with Claude Code, Codex, and any `npx skills`-compatible platform.
+
+### Option 2: Manual Copy
+
+Clone the repo and copy skill directories into your platform's skill folder:
+
+```bash
+git clone https://github.com/siraphob-vutthanun/skills-from-my-life.git
+cd skills-from-my-life
 mkdir -p ~/.codex/skills
 cp -R launch/daily/skeptical-research ~/.codex/skills/
 cp -R develop/SE/github-https-repo-auth ~/.codex/skills/
+# ... copy any other skill directories you need
 ```
 
-Then ask Codex normally, or explicitly invoke the skill:
+## Use With Codex
+
+After installing, invoke a skill by name in your prompt:
 
 ```text
 Use $skeptical-research to compare these two AI plans for my workflow.
 ```
 
-## Use In ChatGPT Or Another Chat App
+Or let Codex auto-detect the skill from context.
 
-For chat-only use, copy the contents of:
+## Use In ChatGPT
 
-```text
-launch/daily/skeptical-research/SKILL.md
-```
-
-Paste it into a custom instruction, project instruction, custom GPT instruction, or the top of a new chat. The v1 skill is intentionally self-contained, so no extra reference files are required.
+For chat-only use, copy the contents of any `SKILL.md` file (e.g. `launch/daily/skeptical-research/SKILL.md`) and paste it into a custom instruction, project instruction, custom GPT instruction, or the top of a new chat. Each v1 skill is self-contained, so no extra reference files are required.
 
 ## Design Principles
 
