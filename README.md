@@ -72,11 +72,7 @@ Works with Claude Code, Codex, and any `npx skills`-compatible platform.
 
 ### Option 2: Manual Copy
 
-Clone the repo and copy skill directories into your platform's skill folder:
-
-```bash
-git clone https://github.com/siraphob-vutthanun/skills-from-my-life.git
-cd skills-from-my-life
+Clone the repo and copy skill directories into Codex's skill folder (`~/.codex/skills`) or your platform's equivalent:
 mkdir -p ~/.codex/skills
 cp -R launch/daily/skeptical-research ~/.codex/skills/
 cp -R develop/SE/github-https-repo-auth ~/.codex/skills/
