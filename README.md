@@ -19,6 +19,15 @@ Each lifecycle has the same categories:
 - `coding/`
 - `other/`
 
+## All Skills
+
+| Skill | Status | Path |
+|-------|--------|------|
+| skeptical-research | launch | `launch/daily/skeptical-research` |
+| github-https-repo-auth | develop | `develop/SE/github-https-repo-auth` |
+| codex-sandbox-git | develop | `develop/SE/codex-sandbox-git` |
+| git-feature-branch-hygiene | develop | `develop/SE/git-feature-branch-hygiene` |
+
 ## Available Skills
 
 ### skeptical-research
@@ -34,15 +43,6 @@ Best for questions like:
 - "Is this pricing or quota still current?"
 - "Is this tool production-ready?"
 - "Compare these two software stacks for my use case."
-
-## All Skills
-
-| Skill | Status | Path |
-|-------|--------|------|
-| skeptical-research | launch | `launch/daily/skeptical-research` |
-| github-https-repo-auth | develop | `develop/SE/github-https-repo-auth` |
-| codex-sandbox-git | develop | `develop/SE/codex-sandbox-git` |
-| git-feature-branch-hygiene | develop | `develop/SE/git-feature-branch-hygiene` |
 
 ## Develop Skills
 
@@ -73,6 +73,7 @@ Works with Claude Code, Codex, and any `npx skills`-compatible platform.
 ### Option 2: Manual Copy
 
 Clone the repo and copy skill directories into Codex's skill folder (`~/.codex/skills`) or your platform's equivalent:
+```bash
 mkdir -p ~/.codex/skills
 cp -R launch/daily/skeptical-research ~/.codex/skills/
 cp -R develop/SE/github-https-repo-auth ~/.codex/skills/
