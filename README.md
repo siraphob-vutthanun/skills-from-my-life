@@ -24,9 +24,12 @@ Each lifecycle has the same categories:
 | Skill | Status | Path |
 |-------|--------|------|
 | skeptical-research | launch | `launch/daily/skeptical-research` |
+| change-guard | launch | `launch/coding/refactor/change-guard` |
 | github-https-repo-auth | develop | `develop/SE/github-https-repo-auth` |
 | codex-sandbox-git | develop | `develop/SE/codex-sandbox-git` |
 | git-feature-branch-hygiene | develop | `develop/SE/git-feature-branch-hygiene` |
+| youtube-status-official-api | develop | `develop/coding/wrangler/youtube-status-official-api` |
+| worker-production-verification | develop | `develop/coding/wrangler/worker-production-verification` |
 
 ## Available Skills
 
@@ -44,6 +47,12 @@ Best for questions like:
 - "Is this tool production-ready?"
 - "Compare these two software stacks for my use case."
 
+### change-guard
+
+Path: `launch/coding/refactor/change-guard`
+
+Use this skill to guard structural, refactoring, dependency, contract, and configuration changes by capturing the baseline, making the change deliberately, and checking for stale references or docs afterward.
+
 ## Develop Skills
 
 Still being shaped:
@@ -51,6 +60,8 @@ Still being shaped:
 - `develop/SE/github-https-repo-auth` - repo-scoped GitHub HTTPS auth and push troubleshooting
 - `develop/SE/codex-sandbox-git` - Codex sandbox git workflow and escalation cautions
 - `develop/SE/git-feature-branch-hygiene` - keep unrelated git work on separate branches
+- `develop/coding/wrangler/youtube-status-official-api` - require official YouTube Data API evidence for channel, live, upload, and ownership checks
+- `develop/coding/wrangler/worker-production-verification` - verify scheduled or stateful Workers from deployed runtime evidence, bindings, logs, and remote state
 
 ### Security warning
 
