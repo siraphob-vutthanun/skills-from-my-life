@@ -28,8 +28,8 @@ Each lifecycle has the same categories:
 | github-https-repo-auth | develop | `develop/SE/github-https-repo-auth` |
 | codex-sandbox-git | develop | `develop/SE/codex-sandbox-git` |
 | git-feature-branch-hygiene | develop | `develop/SE/git-feature-branch-hygiene` |
-| youtube-status-official-api | develop | `develop/coding/youtube-status-official-api` |
-| worker-production-verification | develop | `develop/coding/worker-production-verification` |
+| youtube-status-official-api | develop | `develop/coding/wrangler/youtube-status-official-api` |
+| worker-production-verification | develop | `develop/coding/wrangler/worker-production-verification` |
 
 ## Available Skills
 
@@ -60,8 +60,8 @@ Still being shaped:
 - `develop/SE/github-https-repo-auth` - repo-scoped GitHub HTTPS auth and push troubleshooting
 - `develop/SE/codex-sandbox-git` - Codex sandbox git workflow and escalation cautions
 - `develop/SE/git-feature-branch-hygiene` - keep unrelated git work on separate branches
-- `develop/coding/youtube-status-official-api` - require official YouTube Data API evidence for channel, live, upload, and ownership checks
-- `develop/coding/worker-production-verification` - verify scheduled or stateful Workers from deployed runtime evidence, bindings, logs, and remote state
+- `develop/coding/wrangler/youtube-status-official-api` - require official YouTube Data API evidence for channel, live, upload, and ownership checks
+- `develop/coding/wrangler/worker-production-verification` - verify scheduled or stateful Workers from deployed runtime evidence, bindings, logs, and remote state
 
 ### Security warning
 
