@@ -102,7 +102,7 @@ A strong final answer includes:
 For this repo, useful commands are:
 
 ```bash
-cd /Users/bas/all_work/full_vibe_code_proj/discord-bot-server/white-tree-b6b4
+cd <path-to-your-worker-repo>
 npm test
 npm run typecheck
 npm run deploy
