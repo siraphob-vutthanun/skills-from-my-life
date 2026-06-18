@@ -27,6 +27,7 @@ Each lifecycle has the same categories:
 | github-https-repo-auth | develop | `develop/SE/github-https-repo-auth` |
 | codex-sandbox-git | develop | `develop/SE/codex-sandbox-git` |
 | git-feature-branch-hygiene | develop | `develop/SE/git-feature-branch-hygiene` |
+| change-guard | develop | `develop/coding/refactor/change-guard` |
 
 ## Available Skills
 
@@ -51,6 +52,7 @@ Still being shaped:
 - `develop/SE/github-https-repo-auth` - repo-scoped GitHub HTTPS auth and push troubleshooting
 - `develop/SE/codex-sandbox-git` - Codex sandbox git workflow and escalation cautions
 - `develop/SE/git-feature-branch-hygiene` - keep unrelated git work on separate branches
+- `develop/coding/refactor/change-guard` - guard structural/refactoring changes with baseline capture, consistency tests, and stale-reference checks
 
 ### Security warning
 
